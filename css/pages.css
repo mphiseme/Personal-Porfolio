@@ -181,9 +181,11 @@ ul li {
     padding: 5px;
 }
 .subgItm {
-    border: 2px solid black;
+    border: 1px solid black;
     font-size: 15px;
-    margin:5px;
+    padding:35px;
+    margin: 5px;
+    background-color:rgb(149, 123, 180);;
 }
 .subgrdI{
     grid-column:1 / span 2;
