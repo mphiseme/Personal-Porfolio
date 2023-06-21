@@ -29,30 +29,38 @@ Description: Css file for Pets-R-US Site.
   
 }
 
+.imgback{
+    background-image: url("../img/ocean.jpg");
+    background-size: contain;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 200px; 
+}
 /**HTML header */
 h1 {
     text-align: center;
     color: white;
 }
-h3 {
-    padding:20px 0 20px 0;    
+h3 {      
     background-color: rgb(149, 123, 180);
     text-align: center;
 }
 /** Section */
-section:nth-child(odd) {
-    background-color: rgb(249, 249, 248);
-}
+
 
 .allSection {   
     margin-top: 1px; 
     padding: 0px 80px;
-    padding-bottom: 100px;
+    
     align-items: center;
+    background-color: rgb(249, 249, 248);
 }
 .sectTitle {
     text-align: center;
     font-size: 25px;
+    margin: 20px 0 50px 0;
+    margin: auto;
+    width:auto;
 }
  .divSection{
     display:inline;
@@ -61,10 +69,7 @@ section:nth-child(odd) {
     width: 100%;
 }
 
-.sectTitle {
-    width: 100%;
-   
-}
+
 .divAll {
     padding-left: 10px;
     padding-right: 10px;
@@ -81,17 +86,13 @@ a {
 #menu {
     display:inline-block; 
     text-align: center;
-    
+    width: 100%;
 }
 nav {
-    border: 5px solid black;
-    background-color: rgb(230, 230, 234);
-    width: 100%;
-    align-items: center;
+    
     padding: 10px; 
 }
 nav a {
-    width: 100px;
     padding: 5px;
     text-align: center;
     font-size: 25px; 
@@ -99,10 +100,14 @@ nav a {
 
 .subMenu:hover .sublist{
     position: relative;
-    display: block;
+   
+    background-color: red;
+   
 }
 .menlist {
     padding-right: 10px;
+    background-color: #917FB3;
+    
 }
 
 /**Resume page */
@@ -125,6 +130,7 @@ nav a {
     float: right;
     text-align: right;
     list-style-type: none;
+    
 }
 #downloadp {
     margin: auto;
@@ -158,13 +164,22 @@ ul li {
 #gridAll {
     display:grid;
     grid-template-columns: auto auto auto;
-    padding: 10px;
+    padding: 10px 10px auto 10px; 
+}
+
+.bottom{
+    clear:left;
 }
 .gridItem {
     text-align:center;
     font-size: 20px;
     padding: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);    
+}
+.submenu{
+    float: left;
+    width: 32%;
+    text-align: center; 
 }
 .captionBck {
     background-color: rgb(206 183 201);
@@ -176,8 +191,10 @@ ul li {
     grid-row: 2;
 }
 .subgrid {
-    display: grid;
+    display: inline-flex;
+    flex-wrap: wrap;
     grid-template-columns: auto auto;
+    
     padding: 5px;
 }
 .subgItm {
@@ -185,7 +202,7 @@ ul li {
     font-size: 15px;
     padding:35px;
     margin: 5px;
-    background-color:rgb(149, 123, 180);;
+    background-color:rgb(149, 123, 180);     
 }
 .subgrdI{
     grid-column:1 / span 2;
